@@ -462,8 +462,9 @@ export const GetLeaderboardData = async (): Promise<{
 
 const contractAddresses = require('./addresses/contractAddresses.json');
 const providerUrls = [
-  'https://polygon-mumbai-bor.publicnode.com',
-  'https://alfajores-forno.celo-testnet.org',
+  'https://arb1.arbitrum.io/rpc',
+  'https://nova.arbitrum.io/rpc',
+  'https://sepolia-rollup.arbitrum.io/rpc'
 ];
 
 let provider;
