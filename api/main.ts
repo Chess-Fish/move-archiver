@@ -8,30 +8,12 @@ import { abi as TournamentABI } from './ABI/ChessFishTournament.json';
 import { ethers } from 'ethers';
 import { Client } from 'pg';
 
-/* import { createClient } from 'redis';
-const url = process.env.REDIS_URL || 'redis://localhost:6379';
-const client = createClient({ url });
-
-client.on('connect', () => {
-  console.log('Redis client connected');
-});
-
-client.on('error', (err) => {
-  console.error('Redis error:', err);
-});
-
-client.on('end', () => {
-  console.log('Redis client disconnected');
-});
-
-async function initialize() {
-  try {
-    await client.connect();
-  } catch (error) {
-    console.error('Error initializing the server:', error);
-  }
-}
-initialize(); */
+const contractAddresses = require('./addresses/contractAddresses.json');
+const providerUrls = [
+  'https://arb1.arbitrum.io/rpc',
+  'https://nova.arbitrum.io/rpc',
+  'https://sepolia-rollup.arbitrum.io/rpc',
+];
 
 interface Wager {
   chainId: number;
@@ -72,6 +54,11 @@ interface TournamentData {
   isTournament: boolean;
 }
 
+type PlayerStats = {
+  totalGames: number;
+  gamesWon: number;
+};
+
 const getRetryWithDelay = async (fn, delay = 10000) => {
   while (true) {
     try {
@@ -82,6 +69,15 @@ const getRetryWithDelay = async (fn, delay = 10000) => {
     }
   }
 };
+
+let provider;
+let chessAddress;
+let tournamentAddress;
+
+let chess;
+let tournament;
+
+let chainId;
 
 const GetAnalyticsData = async () => {
   try {
@@ -368,16 +364,11 @@ export const GetTournaments = async () => {
   }
 };
 
-type PlayerStats = {
-  totalGames: number;
-  gamesWon: number;
-};
-
 export const GetLeaderboardData = async (): Promise<{
   [key: string]: PlayerStats;
 }> => {
   const playerStatistics: { [key: string]: PlayerStats } = {};
-  
+
   const connectionString = `${process.env.DB_CONNECTION}?sslmode=require`;
 
   const client = new Client({
@@ -428,8 +419,6 @@ export const GetLeaderboardData = async (): Promise<{
       });
     }
 
-
-
     // Save the data to the database
     for (const [address, stats] of Object.entries(playerStatistics)) {
       const { totalGames, gamesWon } = stats;
@@ -448,7 +437,6 @@ export const GetLeaderboardData = async (): Promise<{
       await client.query(query, [chainId, address, totalGames, gamesWon]);
     }
 
-
     return playerStatistics;
   } catch (error) {
     //alert(`Analytics function : error`);
@@ -459,22 +447,6 @@ export const GetLeaderboardData = async (): Promise<{
     await client.end();
   }
 };
-
-const contractAddresses = require('./addresses/contractAddresses.json');
-const providerUrls = [
-  'https://arb1.arbitrum.io/rpc',
-  'https://nova.arbitrum.io/rpc',
-  'https://sepolia-rollup.arbitrum.io/rpc'
-];
-
-let provider;
-let chessAddress;
-let tournamentAddress;
-
-let chess;
-let tournament;
-
-let chainId;
 
 async function main() {
   console.log('STARTING');
