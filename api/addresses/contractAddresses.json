@@ -25,6 +25,14 @@
     "tournament": "0x9aD815bc1d5269D4378bCF2b2101b14D4874cE09"
   },
   {
+    "network": "goerli",
+    "chainID": 5,
+    "owner": "0xB11B4FF9C2e66e78A0c53b6aE5EAAA87548f2dE7",
+    "chessFishToken": "0x8F06c56A3F11b022ef9461C0b62F81a5Aa93283f",
+    "crowdSale": "0xbD3F3011b22dadB764BeF9E95279e0C8b5B58357",
+    "treasuryVesting": "0xeD01FEEdE03a11f09E205DD2df3e6F96Ac5F88De"
+  },
+  {
     "network": "sepolia",
     "chainID": 11155111,
     "owner": "0x982b654F3e99c7FD9F36E99570d5d56512dbDd96",
@@ -33,7 +41,7 @@
     "treasuryVesting": "0x2d13393E1A5bF18E06BBb418B550b38607038804"
   },
   {
-    "network": "sepolia_arb",
+    "network": "unknown",
     "chainID": 421614,
     "deployer": "0x982b654F3e99c7FD9F36E99570d5d56512dbDd96",
     "chessFishToken": "0x25b2be535c9009Ac91A3150A5Ee38F348545CEe5",
