@@ -14,26 +14,6 @@
   },
   {
     "network": "unknown",
-    "chainID": 44787,
-    "deployer": "0x04E7aD617B38D9FCd9A65C8A1b30255350faC8C6",
-    "chessFishToken": "0x77cA5B0Dc2b0d933961584b49713C5Cb814735B8",
-    "dividendSplitter": "0xbAd4ec2C67953AC84d6BE8a8856664AdFfAf0131",
-    "chessNFT": "0x1474A68579a50bad3AeB26b51894Fa9AcaF50d3B",
-    "moveVerification": "0x6C432d7f07dFE615584309E12CbCbe1BF9086627",
-    "chessWager": "0x2F6963772a108eb6984bdF7B648455187eA07Ef5",
-    "crowdSale": "0x5C02C335f038F57fcD5DdC28de7c1F4f144658F2",
-    "tournament": "0x9aD815bc1d5269D4378bCF2b2101b14D4874cE09"
-  },
-  {
-    "network": "goerli",
-    "chainID": 5,
-    "owner": "0xB11B4FF9C2e66e78A0c53b6aE5EAAA87548f2dE7",
-    "chessFishToken": "0x8F06c56A3F11b022ef9461C0b62F81a5Aa93283f",
-    "crowdSale": "0xbD3F3011b22dadB764BeF9E95279e0C8b5B58357",
-    "treasuryVesting": "0xeD01FEEdE03a11f09E205DD2df3e6F96Ac5F88De"
-  },
-  {
-    "network": "unknown",
     "chainID": 11155111,
     "owner": "0xb870f7d1CE738Ed54bF168A4d9929e05D673e34e",
     "chessFishToken": "0xE9e136a8fd4D06CA36bbE47734Fb4D13D3e48C59",
