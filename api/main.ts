@@ -13,6 +13,7 @@ const providerUrls = [
   'https://arb1.arbitrum.io/rpc',
   'https://nova.arbitrum.io/rpc',
   'https://sepolia-rollup.arbitrum.io/rpc',
+  'https://arbitrum-goerli.publicnode.com',
 ];
 
 interface Wager {
