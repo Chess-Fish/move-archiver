@@ -1,35 +1,4 @@
-## Smart Contracts
-
-Currently the ChessFish contracts are only deployed to Polygon Mumbai and Goerli Testnets.
-
-## Testnet Contract Addresse and Addresses
-## Networks and Addresses
-
-### Arbitrum Sepolia
-
-| Contract name    | Address                                                    |
-|-------------------|----------------------------------------------------------------|
-| Deployer          | 0xB11B4FF9C2e66e78A0c53b6aE5EAAA87548f2dE7                   |
-| Chess Fish Token  | 0x8F06c56A3F11b022ef9461C0b62F81a5Aa93283f                   |
-| Dividend Splitter | 0xA804A4411aB00F7DF2029a36EC8fDA72F89B3b9A                   |
-| Chess NFT         | 0xE591E05D6caf4c52c94d084e6FD15c85F3B38C2d                   |
-| Move Verification | 0xe3adcBF9BbD6fCC4249d786AF8f11a1bBB8ae526                   |
-| Chess Wager       | 0x84162e735D14810F7307D6E637aBdcD4CC0f1A1e                   |
-| Crowd Sale        | 0xbD3F3011b22dadB764BeF9E95279e0C8b5B58357                   |
-| Tournament        | 0x529481596d39aF79B99c17B3Df5cbb893f70A565                   |
-| Treasury Vesting  | 0xeD01FEEdE03a11f09E205DD2df3e6F96Ac5F88De                   |
-
-
-### Sepolia 
-
-| Contract name    | Address                                                    |
-|------------------|----------------------------------------------------------------|
-| Chess Fish Token | 0x8F06c56A3F11b022ef9461C0b62F81a5Aa93283f                   |
-| Crowd Sale       | 0xbD3F3011b22dadB764BeF9E95279e0C8b5B58357                   |
-| Treasury Vesting | 0xeD01FEEdE03a11f09E205DD2df3e6F96Ac5F88De                   |
-
-
-NEW contracts: [
+[
   {
     "network": "unknown",
     "chainID": 11155111,
@@ -41,14 +10,14 @@ NEW contracts: [
     "network": "unknown",
     "chainID": 421614,
     "deployer": "0x2Ff6C88b03Ed6926Cc83C05E2c7689f1e1299B13",
-    "chessFishToken": "0xE9e136a8fd4D06CA36bbE47734Fb4D13D3e48C59",
-    "dividendSplitter": "0x38eC438f4eC415982D53759c7090E1307276A39E",
-    "chessNFT": "0x5C9C08a488e75f8871B91AA8A5a4aDF74980BF24",
-    "moveVerification": "0xc43b902d97A314438237c9fa8139887856dC385A",
-    "gaslessGame": "0xff8cE337f8D3f47Fcb4BcCC596315da56bf05d45",
-    "chessWager": "0x6f83eEf1F3ABB2a5677Baa57F604B4B00FA71fB4",
-    "crowdSale": "0x88cac43DCD66157cB68BbAB41a462F1e48a8D0f1",
-    "tournament": "0x39310d957743DD0D482818Bc7f6d5b6b97475d09",
-    "treasuryVesting": "0x9bA0ec24C19D3fA40a83B1179C3F0345Eb3d435B"
+    "chessFishToken": "0x618157159056222d501209951a3AB60a6F8Ee1de",
+    "dividendSplitter": "0x6661986fDF2F0dFca7840585Df30565bc2077DA4",
+    "chessNFT": "0xD0d4bAc3dFef74830625990a0cf17aB04B99f034",
+    "moveVerification": "0x8a64782C18a8FA0C31Ee6571ED61F21ecB70AC4f",
+    "gaslessGame": "0x25EFcd53ab65ca2F8eAAF8aFB042F0DBB705f3b2",
+    "chessWager": "0xeAe6Ab0D60156Ef91733f5Dc29F828Ad6eF50b9F",
+    "crowdSale": "0xa062E0f2d353114063cc6d5B58a9B35D0b298d2F",
+    "tournament": "0x95D0c3097D5E71cc3c622eE0da0b3Ddb7Da18665",
+    "treasuryVesting": "0xa7C7837C7872ABa9B79CA352C1300C211955B90c"
   }
 ]
