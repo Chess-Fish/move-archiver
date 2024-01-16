@@ -340,16 +340,16 @@ export const GetTournaments = async () => {
       const tournamentData: TournamentData = {
         chainId: Number((await provider.getNetwork()).chainId),
         tournamentNonce: i,
-        numberOfPlayers: Number(data[0]),
+        numberOfPlayers: Number(data.numberOfPlayers),
         players: [],
-        numberOfGames: Number(data[1]),
-        token: data[2],
-        tokenAmount: Number(data[3]),
-        isInProgress: Boolean(data[4]),
-        startTime: Number(data[5]),
-        timeLimit: Number(data[6]),
-        isComplete: Boolean(data[7]),
-        isTournament: Boolean(data[8]),
+        numberOfGames: Number(data.numberOfGames),
+        token: data.token,
+        tokenAmount: Number(data.tokenAmount),
+        isInProgress: Boolean(data.isInProgress),
+        startTime: Number(data.startTime),
+        timeLimit: Number(data.timeLimit),
+        isComplete: Boolean(data.isComplete),
+        isTournament: Boolean(data.isTournament),
       };
 
       const players = await tournament.getTournamentPlayers(i);
