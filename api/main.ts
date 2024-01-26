@@ -524,7 +524,7 @@ async function main() {
 
 main();
 
-const countdownInterval = 20 * 60 * 1000; // 20 mins in milliseconds
+const countdownInterval = 30 * 60 * 1000; // 20 mins in milliseconds
 
 // Function to update the terminal title with the countdown
 function updateTerminalTitle(countdown: number) {
